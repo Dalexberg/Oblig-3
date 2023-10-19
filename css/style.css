@@ -16,35 +16,35 @@ header {
     text-align: left;
 }
 
-.topnav {
+nav {
     overflow: hidden;
     background-color: rgb(227, 227, 230);
 }
 
-.topnav a{
+nav a{
     float: left;
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 13px 15px;
     text-decoration: none;
     font-size: 17px;
 
 }
 
 
-.topnav a:hover {
+nav a:hover {
     background-color: rgb(96, 172, 207);
     color: black;
 }
 
 
-.topnav a.active {
+nav a.active {
     background-color: rgb(96, 172, 208);
     color: white;
 }
 
-.topnav input[type=text] {
+nav input[type=text] {
     float:inline-start;
     padding: 6px;
     border: none;
@@ -53,7 +53,7 @@ header {
     font-size: 13px;
 }
 
-.topnav .search-container button:hover {
+nav .search-container button:hover {
 background: #ccc;
 
 }
@@ -65,7 +65,36 @@ background: #ccc;
     padding: 5px;
     margin-top: 8px;
 }
+article{
+    max-width: 400px;
+    min-width: 250px;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0px 15px 0px 15px;
+
+}
 
 main section article img{
     width: 100%;
 }
+
+.container .btn {
+    position:absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
