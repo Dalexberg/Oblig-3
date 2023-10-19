@@ -65,3 +65,7 @@ background: #ccc;
     padding: 5px;
     margin-top: 8px;
 }
+
+main section article img{
+    width: 100%;
+}
