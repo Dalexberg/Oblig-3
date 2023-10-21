@@ -10,91 +10,420 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: white;
+    max-width: 100%;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main_content"
+    "footer";
+    grid-template-columns: 1fr;
 }
 
-header {
-    text-align: left;
+header{ grid-area: header;}
+main{grid-area: main_content}
+footer{grid-area: footer;}
+
+.container {
+display:flex;
+justify-content: center;
+border-bottom: black 1px solid;
+padding: 0.5rem;
+align-items: center;
 }
 
-nav {
-    overflow: hidden;
-    background-color: rgb(227, 227, 230);
+.container a{   
+    font-size: 2rem;
 }
 
-nav a{
-    float: left;
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 13px 15px;
-    text-decoration: none;
-    font-size: 17px;
+.logo_hjem {
+order: 2;
+text-decoration: none;
+color: black;
+margin-right: auto;
+margin-left: 1rem;
 
 }
 
+.hamburgermeny {
+order: 1;
+padding: 0.5rem;
+margin-right: auto;
 
-nav a:hover {
-    background-color: rgb(96, 172, 207);
+}
+
+.profil {
+    order: 5;
+    padding: 0.5rem;
+}
+
+.handlekurv {
+    order: 6;
+    padding: 0.5rem;
+}
+
+.searchbar {
+    order: 4;
+    padding: 0.5rem;
+    
+}
+
+
+.searchbar input{
+    width: 8rem;
+    border-radius: 17px;
+}
+
+a{
     color: black;
+    text-decoration: none;
 }
 
-
-nav a.active {
-    background-color: rgb(96, 172, 208);
-    color: white;
-}
-
-nav input[type=text] {
-    float:inline-start;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-left: 4px;
-    font-size: 13px;
-}
-
-nav .search-container button:hover {
-background: #ccc;
+.produkt_container > img{
+max-width: 75%;
+min-width: 50%;
 
 }
 
-.search-container button {
-    float:inline-start;
-    display: block;
-    text-align: left;
-    padding: 5px;
-    margin-top: 8px;
-}
-article{
-    max-width: 400px;
-    min-width: 250px;
+.produkt_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
     width: 100%;
-    margin: 1rem auto;
-    padding: 0px 15px 0px 15px;
-
+    height: 100%;
+    padding-top: 2rem;
 }
 
-main section article img{
-    width: 100%;
+.btn{
+background-color: rgb(54, 53, 53);
+border-radius: 16px;
+border: none;
+text-align: center;
+display: inline-block;
+font-size: 1rem;
+color: white;
+padding: 0.5rem; 
 }
 
-.container .btn {
-    position:absolute;
-    bottom: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 20px;
-    padding: 12px 24px;
-    border: none;
+
+
+.btn:hover{
     cursor: pointer;
-    border-radius: 15px;
+}
+
+.searchbar button{
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+    
+.searchbar > button:hover{
+    cursor: pointer;
+}
+
+.fillertekst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fillertekst > p{
+    width: 75%;
+    height: auto;
     text-align: center;
 }
 
-.container .btn:hover {
-    background-color: black;
+.fillertekst > h2{
+    margin-bottom: 0;
 }
 
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(121, 117, 117);
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+.kmb_nav{
+    margin: 0.5rem;
+}
+.kmb_nav > a{
+    padding: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer_nav a{
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+
+
+.important_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+    width: auto;
+
+}
+
+.important_info>a{
+text-align: center;
+margin: 0.5rem;
+text-decoration: none;
+
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+
+}
+
+.socials>a{
+    padding: 0.5rem;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+@media (max-width: 1024px){
+    .searchbar input{
+        display:none
+    }
+}
+
+.product_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    bottom: 5%;
+    height: auto;
+    
+}
+
+.product_button p{
+  color: white;  
+  background-color:rgba(48, 49, 49, 0.315);
+  text-align: center;
+}
+
+@media (max-width: 1023px){
+    .kvinner, .menn, .barn{
+        display: none;
+ 
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: white;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas:
+        "header"
+        "main_content"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+.kvinner, .menn, .barn{
+
+    margin: 1.5rem;
+    order: 3;
+}
+
+
+@media (min-width:1024px){
+    .hamburgermeny{
+        display: none;
+        
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: white;
+        max-width: 100%;
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main_content main_content main_content"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+.halv_en{
+display: flex;
+flex-direction: row;
+
+}
+.halv_to{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.halv_en article:nth-child(1){
+order: 1;
+}
+
+.halv_en article:nth-child(2){
+    order: 2;
+    }
+.halv_to article:nth-child(1){
+        order: 4;
+        }
+.halv_to article:nth-child(2){
+            order: 5;
+            }
+html{
+font-size: 1vw;
+
+}
+
+}
+
+/* Her begynner produktsiden (produkt.html) */
+
+
+
+.produktet img{
+    max-width: 75%;
+    min-width: 50%;
+
+}
+
+.produktet{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    margin: 0;
+    position: relative;
+    
+}
+
+.more_images{
+    display: flex;
+    flex-direction: row;    
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 45%;
+    bottom: 5%;
+    font-size: 1.5rem;
+}
+
+.more_images i{
+    padding: 0.25rem;
+    padding-bottom: 0;
+}
+
+.produktinfo{
+width: 75%;
+display: grid;
+justify-content: center;
+align-items: center;
+grid-template-areas:
+"tittel pris"
+"info info";
+grid-template-columns: 1fr 1fr;
+text-align: center;
+}
+
+.produktinfo h2{ grid-area: tittel;
+text-align: left;}
+.produktinfo h3{ grid-area: pris;
+font-size: 1.5rem;}
+.produktinfo p{ grid-area: info;
+text-align: left;}
+
+.produktkjøp{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.størrelse{
+    display: grid;
+    width: 80%;
+    
+    grid-template-areas: 
+    "en en en en"
+    "to tre fire fem"
+    "seks syv åtte ni"
+    "ti ti ti ti";
+    height: auto;
+    margin-bottom: 3rem ;
+}
+
+.velg{
+    font-weight: bold;
+    font-size: 1.2rem;
+    grid-area: en;
+}
+
+.førti, .førtien, .førtito, .førtitre, .førtifire, .førtifem, .førtiseks, .førtisyv{
+border: black 1px solid;
+text-align: center;
+margin: 0.5rem;
+padding-top: 20%;
+padding-bottom: 20%;
+background-color: rgb(240, 233, 233);
+
+}
+
+.førti, .førtien, .førtito, .førtitre, .førtifire, .førtifem, .førtiseks, .førtisyv:hover{
+    cursor: pointer;
+}
+
+.legg_til{
+    grid-area: ti;
+    background-color: rgb(54, 53, 53);
+    border-radius: 16px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.lignende img{
+    max-width: 75%;
+    min-width: 50%;
+}
+.lignende_produkter{
+text-align: center;
+}
+
+.lignende{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    margin: 0;
+    position: relative;
+}
+
+.lignende_produkter i{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
