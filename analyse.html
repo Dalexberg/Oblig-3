@@ -1,2 +1,135 @@
 <!DOCTYPE html>
 <html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <title>Analyseside</title>
+        <script src="https://kit.fontawesome.com/693f4a29b0.js" crossorigin="anonymous"></script>
+        </head>
+
+        <body>
+            <header>
+                <nav class="container">
+                
+                <a class="logo_hjem" href="index.html">Oblig 4</a>
+                 <div class="searchbar">
+                  <input type="text" placeholder="Søk.." name="søk">
+                  <button type="submit"><i class="fa fa-search"></i> </button>
+                </div>
+        
+                <a href="" class="kvinner">Kvinner</a>
+                <a href="" class="menn">Menn</a>
+                <a href="" class="barn">Barn</a>
+               
+                <a href="" class="hamburgermeny"><i class="fa-solid fa-bars"></i></a>
+                <a href="" class="profil"><i class="fa-solid fa-user"></i></a> 
+                <a href="handlekurv.html" class="handlekurv"><i class="fa-solid fa-cart-shopping"></i> </a>
+             
+              </nav>
+            </header>
+        
+            <main>
+                <section class="Analyse1">
+                    <article class="google_trends">
+                     <h1>Analyse av nettstedet</h1>
+                    <h2>Google-trends</h2>
+                    <p>Her er noen nøkkelord jeg fant som var relevante for siden:</p>
+                    <ol>
+                        <li>Løpesko</li>
+                        <li>Joggesko</li>
+                        <li>Vintersko</li>
+                        <li>Tursko</li>
+                        <li>Skobutikk</li>
+                    </ol>
+                    <p>Disse nøkkelordene valgte jeg fordi de var relevante til nettsiden. <br> 
+                        Nøkkelordene hadde relativt høy interesse i alle fylker i Norge. <br>
+                        Alle nøkkelordene holder på interesse ganske jevnt, <br>
+                        med unntak av vintersko, som har ganske lav interesse resten av året, <br>
+                        men som begynner å få høy interesse nå som vi kommer til vinter <br>
+                        Google-trends viser også jevnlig høy interesse på spesifike merker. <br>
+                        Som for eksempel:
+                    </p>
+
+                    <ol>
+                        <li>Adidas</li>
+                        <li>Nike</li>
+                        <li>Puma</li>
+                        <li>New Balance</li>
+                        <li>Asics</li>
+                     </ol>
+               </article>
+ 
+               <article class="Trends_Bilde1">
+                <img src="img_oblig4/interessegeoeks.png" alt="Eksempel på interesse i fylker">
+                <p>Her har jeg lagt til et eksempel som viser interesse på løpesko i fylkene i norge i følge google-trends. Det er ganske høy interesse i de fleste fylker. <br>
+                     Det er lavest interesse for løpesko i Finnmark, og også litt lavere enn gjennomsnittet i vest- og aust-agder. </p>
+
+                 </article>
+
+                 <article class="Trends_Bilde2">
+                    <img src="img_oblig4/interesseovertideks.png" alt="Eksempel på interesse over tid">
+                    <p>Dette bildet viser google-interessen for Adidas over en periode fra November 2022 til Oktober 2023. <br>
+                     Her kan vi ser at det er ganske jevn interesse for merket Adidas gjennom et år, med noen små "spikes" og "dips" her og der.</p>
+                 </article>
+                </section>
+
+                <section class="SEO_analyse">
+                    <article class="lighthouse">
+                    <h2>SEO Analyse med Lighthouse</h2>
+                     <p>Her har jeg brukt lighthouse i developer tools for å gjøre en analyse av nettsiden. <br>
+                    Vi starter med resultatene av forsiden (index.html). </p>
+                     <h2>Hovedside</h2>
+
+                    <img src="img_oblig4/seoindex.png" alt="SEO resultat for hovedsiden">
+
+                        <p>Hovedsiden scoret et 83 på SEO analysen i følge Lighthouse. Vi kan se gjennom feilmeldingene for å se hva som er galt. 
+                            Det står at siden mangler en meta beskrivelse. Uten en meta beskrivelse, mangler siden en oppsumering av innholdet til siden som kan bli lest av søkemotorer. <br>
+                        </p>
+
+                        <p>
+                            Siden har flere linker som ikke er "crawlable". Dette er et forventet resultat, siden nettsiden har flere linker som ikke leder noe sted. Dette er fordi dette ikke er en ordentlig nettside, og derfor har en del "dummy-linker" uten funksjon for oppsett.
+                        </p>
+
+                        <img src="img_oblig4/seoindex2.png" alt="Del 2 av SEO resultat for hovedsiden">
+                        <p>Her en resultat som analysen godkjente.</p>
+
+                </section>
+
+                <section class="SEO_analyse">
+                    <article class="lighthouse">
+                    
+                     <h2>Produktside</h2>
+
+                    <img src="img_oblig4/seoprodukt.png" alt="SEO resultat for produkt">
+
+                        <p>Produktsiden oppnådde samme score fra lighthouse analysen. Ved videre analyse ser jeg at jeg får samme resultat av SEO analysen til lighthouse på hovedsiden, produktsiden og handlekurv-siden. Jeg legger ikke til flere bilder av resultatene, siden resultatene var helt like. <br>
+                        </p>
+
+                     
+                </section>
+
+<section class="UU_analyse">
+<article class="wave">
+<h2>UU Analyse med WAVE</h2>
+<h3>Hovedside</h3>
+<img src="img_oblig4/uuindex.png" alt="oppsumering av UU resultat for hovedside">
+<p>Her er en oppsumering av resultatene som hovedsiden fikk etter en UU analyse med WAVE.</p>
+<img src="img_oblig4/uuindex2.png" alt="detaljer av UU resultat for hovedside">
+<p>Her er detaljene av resultatene over. Tomme linker og knapper er forventet resultat. Hovedsiden mangler en form label på søkefeltet. WAVE sier også at nettsiden mangler "first level heading" og har en unødvendig link. Linken i feilmeldingen er logoen i footeren. Den er klasifisert som unødvendig fordi den leder til hovedsiden, selv om det er siden du allerede er på. </p>
+
+</article>
+
+</section>
+
+
+
+
+
+             </main>
+
+            
+
+
+        </body>
+        </html>

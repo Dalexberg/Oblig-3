@@ -758,3 +758,91 @@ width: 15%;
 }
 
 }
+
+/*   Analyse           */
+
+.Analyse1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+    
+}
+
+.google_trends h1{
+text-align: center;
+font-size: 2rem;
+
+}
+
+.google_trends h2{
+    text-align: center;
+}
+
+.google_trends p{
+    text-align: center;
+}
+
+.google_trends ol{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+.Trends_Bilde1 img{
+    border: black 1px solid;
+}
+
+.Trends_Bilde1 p{
+    text-align: center;
+}
+
+.Trends_Bilde2 img{
+    border: black 1px solid;
+}
+
+.Trends_Bilde2 p{
+    text-align: center;
+}
+
+.SEO_analyse{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.SEO_analyse h2{
+text-align: center;
+}
+.SEO_analyse p{
+    text-align: center;
+}
+
+.UU_analyse h2{
+    text-align: center;
+}
+
+.UU_analyse h3{
+    text-align: center;
+}
+
+.wave{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.wave img{
+    margin-left: 15rem;
+    border: black 1px solid;
+}
+
+.wave p{
+    text-align: center;
+}
