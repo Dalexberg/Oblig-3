@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Analyse av skobutikken">
+        <meta name="keywords" content="analyse, skobutikk">
+        <meta name="author" content="Daniel Alexander N. Berg">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <title>Analyseside</title>
         <script src="https://kit.fontawesome.com/693f4a29b0.js" crossorigin="anonymous"></script>
@@ -111,15 +114,95 @@
 
 <section class="UU_analyse">
 <article class="wave">
-<h2>UU Analyse med WAVE</h2>
+<h2>UU Analyse med Webaim</h2>
 <h3>Hovedside</h3>
 <img src="img_oblig4/uuindex.png" alt="oppsumering av UU resultat for hovedside">
-<p>Her er en oppsumering av resultatene som hovedsiden fikk etter en UU analyse med WAVE.</p>
+<p>Her er en oppsumering av resultatene som hovedsiden fikk etter en UU analyse med Webaim.</p>
 <img src="img_oblig4/uuindex2.png" alt="detaljer av UU resultat for hovedside">
-<p>Her er detaljene av resultatene over. Tomme linker og knapper er forventet resultat. Hovedsiden mangler en form label på søkefeltet. WAVE sier også at nettsiden mangler "first level heading" og har en unødvendig link. Linken i feilmeldingen er logoen i footeren. Den er klasifisert som unødvendig fordi den leder til hovedsiden, selv om det er siden du allerede er på. </p>
+<p>Her er detaljene av resultatene over. Tomme linker og knapper er forventet resultat. Hovedsiden mangler en form label på søkefeltet. Webaim sier også at nettsiden mangler "first level heading" og har en unødvendig link. Linken i feilmeldingen er logoen i footeren. Den er klasifisert som unødvendig fordi den leder til hovedsiden, selv om det er siden du allerede er på. </p>
+
+<h3>Produktside</h3>
+<img src="img_oblig4/uuprodukt.png" alt="Oppsumering av UU resultat for produktside">
+<p>Dette er resultatene fra UU analysen av produktsiden. Denne siden har flere elementer enn hovedsiden, og den har fått flere feilmeldinger av analysen. </p>
+<img src="img_oblig4/uuprodukt2.png" alt="Detaljert forklaring av resultat av UU analysen av produktsiden">
+<p>Resultatene viser at produktsiden har akkurat samme 9 feilmeldinger som hovedsiden. Manglende form label, og linker som ikke er koblet til en annen nettside. Advarslene, derimot, er det flere av. Analysen er ikke glad i at alle bildene har titler (der jeg har lagt link til kilde), og klager på at tekstenm som er brukt i alle "knappene" på siden ikke er heading elementer. Ellers så viser de grønne og blå (ikke avbildet) resultatene bare oppbyggningen og strukturen til nettsiden.  </p>
+
+
+<h3>handlekurv</h3>
+<img src="img_oblig4/uukurv.png" alt="oppsumering av UU resultat for handlekurv">
+<p>sist, men ikke minst, kommer vi til handlekurv-siden. Her har siden også 9 røde feilmeldinger, som de to andre sidene. Siden har også 16 varslermeldinger.</p>
+<img src="img_oblig4/uukurv2.png" alt="detaljer om feilmeldinger fra UU analyse av handlekurv-siden">
+<p>Nettsiden har igjen samme 9 feilmeldinger som de to andre sidene. Mangel av form label på søkefeltet. Forstørrelsesglasset-knappen funker ikke. 7 linker som ikke leder noen steder. Advarslene klager igjen på tekst som ser ut som at det skal være en heading, men ikke er heading element. Det er flere linker på siden som leder til samme URL. "Hent i butikk" eller "levering" knappene ligger ikke i en "fieldset" og dette får siden en varsel på.  </p>
+
+<img src="img_oblig4/uufelles.png" alt="uu feil i header">
+<p>Her er feilmeldingene som alle sidene hadde til felles. Det er elementer i headeren på siden.</p>
+</article>
+</section>
+
+<section class="chatGPT_analyse">
+<article class="chatgpt">
+<h2>UU og SEO analyse med ChatGPT</h2>
+<p>Dette var det jeg spurte chatgpt: <br>
+     Hello ChatGPT. I need you to consider the following code from a SEO and UU perspective. I need you to give me solutions, but not to update the code with your recommendations.</p>
+    <h3>Hovedside</h3>
+    <img src="img_oblig4/chatgptindex.png" alt="chatgpt svar om hovedsiden">
+    <img src="img_oblig4/chatgptindex2.png" alt="chatgpt svar om hovedsiden del 2">
+
+    <h3>Produktside</h3>
+<img src="img_oblig4/chatgptprodukt.png" alt="chatgpt svar om produktsiden">
+<p>Resten av punktene var det samme som da jeg spurte chatGPT analysere hovedsiden. Disse to punktene var de eneste som var annerledes. Her har chatGPT kommentert på bruk av itemprop. Dette gjorde jeg under forelesning, og var ikke til stede tidligere for OBLIG 3.</p>
+
+<h3>handlekurv</h3>
+<img src="img_oblig4/gptkurv.png" alt="svar av chatGPT på handkelurven">
+<p>Dette var eneste svar som skilte seg ut da jeg ba chatGPT ta en titt på koden til <handlekurv-siden class=""></handlekurv-siden></p>
 
 </article>
+</section>
 
+<section class="tabell">
+    <h2>Her sammenligner jeg svar fra de tre kildene jeg har brukt for analyse.</h2>
+
+<table>
+    <tr>
+      <th>ChatGPT</th>
+      <th>Lighthouse</th>
+      <th>Webaim</th>
+    </tr>
+    <tr>
+      <td>Manglende meta tag</td>
+      <td>Manglende meta tag</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bruk URL eller placeholder tekst i linkene</td>
+      <td>Linker mangler destinasjon</td>
+      <td>Linker mangler destinasjon</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tomme knapper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bruk header tags</td>
+      <td></td>
+      <td>Bruk header tags</td>
+    </tr>
+</table>
+</section>
+
+<section class="forbedringer">
+<article class="tiltak">
+<h2> Forbedrende tiltak</h2>
+<img src="img_oblig4/tiltak1.png" alt="meta tags lagt til i head">
+<p>Jeg har lagt til description, keywords og author meta tags i head på alle sidene.</p>
+
+
+
+
+
+
+</article>
 </section>
 
 
