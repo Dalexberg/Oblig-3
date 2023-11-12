@@ -18,6 +18,20 @@ body {
     "footer";
     grid-template-columns: 1fr;
 }
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
 
 header{ grid-area: header;}
 main{grid-area: main_content}
@@ -921,4 +935,24 @@ table {
 
   .tiltak p{
     text-align: center;
+  }
+
+  .tiltak img{
+    border: black 1px solid;
+  }
+  .skjermleser h2{
+    text-align: center;
+  }
+  .skjermleser p{
+    text-align: center;
+  }
+  .del3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .skjermleser img{
+    border: black 1px solid;
   }
